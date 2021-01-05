@@ -1,0 +1,320 @@
+@import 'config';
+@import 'utils';
+
+#banner {
+  z-index: -5;
+  height: 100vh;
+  border-bottom: 2px $secondary-color-red;
+  background: $eclipse-logo-img;
+  background-position: right top;
+  background-size: 40% 80%; // change this maybe
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  // box-shadow: 0px 9px 20px -4px rgba(0, 0, 0, 0.7); // may remove this
+
+  &-content {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 50%;
+
+    h1 {
+      font-size: 6rem;
+      margin-bottom: 5rem;
+      animation: heading 1s forwards ease-out 500ms;
+    }
+
+    p {
+      font-size: 2.2rem;
+      animation: text 1s forwards ease-out 1s;
+    }
+  }
+}
+
+#nav-bar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  border-right: 2px solid $secondary-color-red;
+  width: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    height: 80%;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    i {
+      color: $main-color-orange;
+      opacity: 1;
+      transition: all ease-in 300ms;
+    }
+
+    a {
+      position: relative;
+
+      span {
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        left: -20%;
+        color: $main-color-orange;
+        font-size: 1rem;
+        font-weight: bolder;
+        display: block;
+        opacity: 0;
+        transition: all ease-in 300ms;
+      }
+
+      &:hover span {
+        opacity: 1;
+      }
+
+      &:hover i {
+        opacity: 0;
+      }
+
+      &[href='home'] span,
+      &[href='skills'] span {
+        font-size: 1.1rem;
+      }
+
+      &[href='about-me'] span {
+        left: -35%;
+      }
+
+      &[href='projects'] span {
+        left: -45%;
+      }
+
+      &[href='contact'] span {
+        left: -65%;
+      }
+    }
+  }
+}
+
+#about-me {
+  &-profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 4rem 0;
+    width: 85%;
+
+    img {
+      margin-left: 2rem;
+      width: 80%;
+    }
+  }
+
+  &-profile-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+    background-color: $lighter-background-color;
+    border-left: 3px solid $secondary-color-red;
+
+    h3 {
+      color: $main-color-orange;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.9rem;
+      line-height: 1.7;
+    }
+  }
+
+  &-strengths {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem auto;
+    grid-gap: 4rem;
+    width: 65%;
+
+    .card-strenght {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      i {
+        color: $secondary-color-red;
+        transform: rotate(0deg) scale(1) translateZ(0);
+        transition: all 0.4s cubic-bezier(0.8, 1.8, 0.75, 0.75);
+        margin: 1rem 0;
+
+        &:hover {
+          transform: rotate(10deg) scale(1.1);
+        }
+      }
+
+      h4 {
+        // change titles
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: $main-color-orange;
+        margin: 0.7rem 0;
+      }
+
+      p {
+        font-size: 1.6rem;
+        margin: 0;
+        padding: 0 1rem;
+      }
+    }
+  }
+}
+
+#projects {
+  // height: fit-content;
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2.5rem;
+
+    &-box {
+      position: relative;
+      height: 30rem;
+      width: 35rem;
+      overflow: hidden;
+
+      img {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: $main-color-orange;
+        align-items: center;
+        justify-content: space-around;
+        transition: all 450ms ease-in-out 0s;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0 2.5rem;
+
+        div {
+          text-align: center;
+          transform: translateY(-30rem);
+        }
+
+        button {
+          background-color: transparent;
+          border: solid 3px $secondary-color-red;
+          transform: translateY(30rem);
+        }
+
+        div,
+        button {
+          transition: all 450ms ease-in-out 0.1s;
+        }
+
+        a {
+          display: block;
+          height: 100%;
+          color: $background-color;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400;
+          font-size: 1.7rem;
+          padding: 1rem 1.5rem;
+        }
+      }
+
+      &:hover .overlay {
+        opacity: 0.9;
+      }
+
+      &:hover .overlay div {
+        transform: translate(0);
+      }
+
+      &:hover .overlay button {
+        transform: translate(0);
+      }
+    }
+
+    &-title {
+      color: $background-color;
+      font-weight: 700;
+      font-size: 2.3rem;
+    }
+
+    &-tech {
+      color: $secondary-color-red;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+    }
+  }
+}
+
+#skills {
+  // & > div.skill + div.skill { all but first child with class
+  //   background-color: black;
+  // }
+  :nth-child(3) {
+    margin-top: 5rem;
+  }
+
+  .skill {
+    display: flex;
+    margin-bottom: 0.9rem;
+    width: 80%;
+
+    i,
+    img {
+      display: block;
+      height: 5rem;
+      width: 8rem;
+      text-align: center;
+      color: $main-color-orange;
+    }
+
+    &-wrap {
+      margin-left: 2rem;
+      width: 100%;
+
+      h4 {
+        margin: 0;
+        margin-bottom: 0.6rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $main-color-orange;
+        font-family: 'Poppins', sans-serif;
+      }
+    }
+
+    &-bar {
+      height: 2rem;
+      background: #c4c4c4;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 0.5rem;
+
+      div {
+        background-color: $secondary-color-red;
+        height: 100%;
+        border-radius: 0.5rem 1rem 1rem 0.5rem;
+      }
+    }
+  }
+}

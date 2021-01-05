@@ -1,0 +1,56 @@
+@keyframes heading {
+  from {
+    transform: translateY(-1200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes text {
+  from {
+    transform: translateY(1200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+section {
+  height: 100vh;
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5rem;
+
+  .main-title {
+    font-size: 4.5rem;
+    margin: 2rem auto;
+  }
+
+  .line,
+  .line-expanded {
+    height: 3px;
+    width: 1rem; // animate line
+    background-color: $secondary-color-red;
+    margin: 0 auto 2rem auto;
+  }
+
+  .line-expanded {
+    width: 18rem;
+    transition: all 2s ease-out;
+  }
+
+  .sub-title {
+    font-size: 2.1rem;
+    margin: 2rem auto;
+  }
+
+  .progress {
+    width: 0%;
+    transition: all 2s ease-in-out 450ms;
+  }
+}
