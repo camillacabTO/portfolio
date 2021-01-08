@@ -343,29 +343,6 @@
     padding: 3rem;
     margin: 2rem auto;
 
-    label {
-      font-size: 2.2em;
-    }
-
-    input,
-    textarea {
-      display: block;
-      width: 100%;
-      border-radius: 0.6rem;
-      background-color: transparent;
-      border: solid 2px $secondary-color-red;
-      color: $secondary-color-yellow;
-      margin-top: 0.3rem;
-      padding: 0.5rem;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.6rem;
-    }
-
-    input {
-      height: 4rem;
-      border-radius: 0.6rem;
-    }
-
     #message,
     #submit-btn {
       grid-column: 1 /3;
