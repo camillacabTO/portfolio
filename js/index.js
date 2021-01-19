@@ -1,5 +1,7 @@
 const lines = document.querySelectorAll('.line')
 const progressBar = document.querySelectorAll('.progress')
+const projectsBoxes = document.querySelectorAll('.projects-box')
+const firstProjectBox = document.querySelector('#first-project-box')
 
 const isInViewport = el => {
   // console.log(el)
@@ -52,6 +54,12 @@ const run = () => {
         default:
           break
       }
+    }
+  })
+
+  projectsBoxes.forEach(box => {
+    if (isInViewport(firstProjectBox)) {
+      box.classList.add('slide-in-elliptic-top-fwd')
     }
   })
 }
