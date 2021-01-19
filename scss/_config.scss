@@ -15,7 +15,14 @@ $eclipse-logo-img: url('../img/eclipselogo.png'); // fix logo in rezising. Maybe
 
 html {
   font-size: 62.5%;
-  background-color: $background-color;
+  background-image: linear-gradient(
+    to right bottom,
+    #000839,
+    #07093d,
+    #110841,
+    #1b0644,
+    #250247
+  );
 }
 
 body {
@@ -60,9 +67,11 @@ button {
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.1rem;
+  cursor: pointer;
 
   &:hover {
-    background: darken($secondary-color-red, 20%);
+    background: darken($secondary-color-red, 10%);
+    color: darken($secondary-color-yellow, 10%);
   }
 }
 

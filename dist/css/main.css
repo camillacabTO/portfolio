@@ -8,7 +8,8 @@
 
 html {
   font-size: 62.5%;
-  background-color: #000839;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#000839), color-stop(#07093d), color-stop(#110841), color-stop(#1b0644), to(#250247));
+  background-image: linear-gradient(to right bottom, #000839, #07093d, #110841, #1b0644, #250247);
 }
 
 body {
@@ -53,6 +54,12 @@ button {
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b52929;
+  color: #f9e307;
 }
 
 label {
@@ -75,7 +82,6 @@ textarea {
 
 input {
   height: 4rem;
-  border-radius: 0.6rem;
 }
 
 input:-webkit-autofill,
@@ -135,6 +141,40 @@ select:-webkit-autofill:focus {
   to {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1;
   }
 }
 
@@ -232,6 +272,7 @@ section .progress {
   top: 0;
   left: 0;
   height: 100vh;
+  max-height: 120vh;
   border-right: 2px solid #d33e3e;
   width: 5.5rem;
   display: -webkit-box;
@@ -422,6 +463,7 @@ section .progress {
   height: 30rem;
   width: 35rem;
   overflow: hidden;
+  opacity: 0;
 }
 
 #projects .projects-box img {
@@ -478,6 +520,7 @@ section .progress {
 #projects .projects-box .overlay a {
   display: block;
   height: 100%;
+  line-height: 100%;
   color: #000839;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -486,7 +529,7 @@ section .progress {
 }
 
 #projects .projects-box:hover .overlay {
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 #projects .projects-box:hover .overlay div {
@@ -572,6 +615,10 @@ section .progress {
   border-radius: 0.5rem 1rem 1rem 0.5rem;
 }
 
+#contact {
+  margin-bottom: 0;
+}
+
 #contact form {
   width: 80%;
   height: -webkit-fit-content;
@@ -591,33 +638,15 @@ section .progress {
   margin: 2rem auto;
 }
 
-#contact form label {
-  font-size: 2.2em;
-}
-
-#contact form input,
-#contact form textarea {
-  display: block;
-  width: 100%;
-  border-radius: 0.6rem;
-  background-color: transparent;
-  border: solid 2px #d33e3e;
-  color: #fae939;
-  margin-top: 0.3rem;
-  padding: 0.5rem;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
-}
-
-#contact form input {
-  height: 4rem;
-  border-radius: 0.6rem;
-}
-
 #contact form #message,
 #contact form #submit-btn {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 /3;
+}
+
+.slide-in-elliptic-top-fwd {
+  -webkit-animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 /*# sourceMappingURL=main.css.map */
