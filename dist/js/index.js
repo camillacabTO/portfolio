@@ -28,13 +28,13 @@ const run = () => {
           bar.style.width = '75%'
           break
         case 'js':
-          bar.style.width = '90%'
-          break
-        case 'node':
           bar.style.width = '80%'
           break
+        case 'node':
+          bar.style.width = '75%'
+          break
         case 'react':
-          bar.style.width = '15%'
+          bar.style.width = '50%'
           break
         case 'api':
           bar.style.width = '80%'
@@ -59,7 +59,9 @@ const run = () => {
 
   projectsBoxes.forEach(box => {
     if (isInViewport(firstProjectBox)) {
-      box.classList.add('slide-in-elliptic-top-fwd')
+      box.classList.contains('box-top')
+        ? box.classList.add('swing-in-top-fwd')
+        : box.classList.add('swing-in-bottom-fwd')
     }
   })
 }

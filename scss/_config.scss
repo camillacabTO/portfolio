@@ -5,7 +5,8 @@ $lighter-background-color: #161d43;
 $main-color-orange: #fbbe3f;
 $secondary-color-yellow: #fae939;
 $secondary-color-red: #d33e3e;
-$eclipse-logo-img: url('../img/eclipselogo.png'); // fix logo in rezising. Maybe image instead?
+$eclipse-logo-img: url('../img/eclipse5.png'); // fix logo in rezising. Maybe image instead?
+$main-transition: all ease-in 250ms;
 
 * {
   padding: 0;
@@ -68,6 +69,7 @@ button {
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.1rem;
   cursor: pointer;
+  transition: $main-transition;
 
   &:hover {
     background: darken($secondary-color-red, 10%);

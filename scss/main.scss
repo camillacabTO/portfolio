@@ -6,30 +6,45 @@
   height: 100vh;
   border-bottom: 2px $secondary-color-red;
   background: $eclipse-logo-img;
-  background-position: right top;
-  background-size: 40% 80%; // change this maybe
+  background-position: right -5rem bottom 12rem;
+  background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
-  // box-shadow: 0px 9px 20px -4px rgba(0, 0, 0, 0.7); // may remove this
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &-content {
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+    grid-gap: 3rem;
     position: absolute;
-    top: 20%;
-    left: 10%;
-    width: 50%;
+    // top: 20%;
+    // left: 10%;
+    width: 80%;
 
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    // margin-bottom: 5rem;
     h1 {
+      margin: auto 0;
       font-size: 6rem;
-      margin-bottom: 5rem;
+      line-height: 1.3;
       animation: heading 1s forwards ease-out 500ms;
+    }
+
+    img {
+      width: 40rem;
     }
 
     p {
       font-size: 2.2rem;
+      line-height: 1.5;
       animation: text 1s forwards ease-out 1s;
     }
   }
@@ -58,7 +73,11 @@
     i {
       color: $main-color-orange;
       opacity: 1;
-      transition: all ease-in 300ms;
+      transition: $main-transition;
+    }
+
+    &[href='#about-me'] span {
+      color: blue;
     }
 
     a {
@@ -74,7 +93,7 @@
         font-weight: bolder;
         display: block;
         opacity: 0;
-        transition: all ease-in 300ms;
+        transition: $main-transition;
       }
 
       &:hover span {
@@ -85,21 +104,25 @@
         opacity: 0;
       }
 
-      &[href='home'] span,
-      &[href='skills'] span {
-        font-size: 1.1rem;
-      }
-
-      &[href='about-me'] span {
-        left: -35%;
-      }
-
-      &[href='projects'] span {
+      &[href='#about-me'] span {
         left: -45%;
       }
 
-      &[href='contact'] span {
-        left: -65%;
+      &[href='#banner'] span,
+      &[href='#skills'] span {
+        font-size: 1.1rem;
+      }
+
+      &[href='#skills'] span {
+        left: -35%;
+      }
+
+      &[href='#contact'] span {
+        left: -75%;
+      }
+
+      &[href='#projects'] span {
+        left: -50%;
       }
     }
   }
@@ -272,9 +295,8 @@
   i {
     color: $main-color-orange;
     padding-left: 1rem;
-    transition: all ease-in 220ms;
+    transition: $main-transition;
     &:hover {
-      // color: darken($main-color-orange, 30%);
       color: $secondary-color-red;
     }
   }
@@ -354,9 +376,44 @@
   }
 }
 
-.slide-in-elliptic-top-fwd {
-  -webkit-animation: slide-in-elliptic-top-fwd 1s
-    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
+footer {
+  height: 7.5rem;
+  width: 100%;
+  padding-left: 5.5rem;
+  margin-top: 8rem;
+
+  .footer-content {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 5rem;
+    color: $main-color-orange;
+    font-family: 'Nunito', sans-serif;
+    background: $lighter-background-color;
+
+    p {
+      font-size: 1.6rem;
+    }
+
+    .social {
+      i {
+        width: 4.5rem;
+        height: 4.5rem;
+        line-height: 4.5rem;
+        text-align: center;
+        border: solid 1px $main-color-orange;
+        border-radius: 50%;
+        margin-left: 1rem;
+        color: $main-color-orange;
+        transition: $main-transition;
+
+        &:hover {
+          color: $secondary-color-red;
+          border-color: $secondary-color-red;
+        }
+      }
+    }
+  }
 }
