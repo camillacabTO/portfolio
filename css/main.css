@@ -146,36 +146,70 @@ select:-webkit-autofill:focus {
   }
 }
 
-@-webkit-keyframes slide-in-elliptic-top-fwd {
+@-webkit-keyframes swing-in-top-fwd {
   0% {
-    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-    transform: translateY(-600px) rotateX(-30deg) scale(0);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0) rotateX(0) scale(1);
-    transform: translateY(0) rotateX(0) scale(1);
-    -webkit-transform-origin: 50% 1400px;
-    transform-origin: 50% 1400px;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
     opacity: 1;
   }
 }
 
-@keyframes slide-in-elliptic-top-fwd {
+@keyframes swing-in-top-fwd {
   0% {
-    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-    transform: translateY(-600px) rotateX(-30deg) scale(0);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0) rotateX(0) scale(1);
-    transform: translateY(0) rotateX(0) scale(1);
-    -webkit-transform-origin: 50% 1400px;
-    transform-origin: 50% 1400px;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes swing-in-bottom-fwd {
+  0% {
+    -webkit-transform: rotateX(100deg);
+    transform: rotateX(100deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 1;
+  }
+}
+
+@keyframes swing-in-bottom-fwd {
+  0% {
+    -webkit-transform: rotateX(100deg);
+    transform: rotateX(100deg);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
     opacity: 1;
   }
 }
@@ -233,42 +267,65 @@ section .progress {
   transition: all 2s ease-in-out 450ms;
 }
 
-.slide-in-elliptic-top-fwd {
-  -webkit-animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.swing-in-top-fwd {
+  -webkit-animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 600ms both;
+  animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 600ms both;
+}
+
+.swing-in-bottom-fwd {
+  -webkit-animation: swing-in-bottom-fwd 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 400ms both;
+  animation: swing-in-bottom-fwd 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 400ms both;
 }
 
 #banner {
   z-index: -5;
   height: 100vh;
   border-bottom: 2px #d33e3e;
-  background: url("../img/eclipselogo.png");
-  background-position: right top;
-  background-size: 40% 80%;
+  background: url("../img/eclipse5.png");
+  background-position: right -5rem bottom 12rem;
+  background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #banner-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3.5fr 1fr;
+      grid-template-columns: 3.5fr 1fr;
+  grid-gap: 3rem;
   position: absolute;
-  top: 20%;
-  left: 10%;
-  width: 50%;
+  width: 80%;
 }
 
 #banner-content h1 {
+  margin: auto 0;
   font-size: 6rem;
-  margin-bottom: 5rem;
+  line-height: 1.3;
   -webkit-animation: heading 1s forwards ease-out 500ms;
           animation: heading 1s forwards ease-out 500ms;
 }
 
+#banner-content img {
+  width: 40rem;
+}
+
 #banner-content p {
   font-size: 2.2rem;
+  line-height: 1.5;
   -webkit-animation: text 1s forwards ease-out 1s;
           animation: text 1s forwards ease-out 1s;
 }
