@@ -4,7 +4,6 @@ const projectsBoxes = document.querySelectorAll('.projects-box')
 const firstProjectBox = document.querySelector('#first-project-box')
 
 const isInViewport = el => {
-  // console.log(el)
   const rect = el.getBoundingClientRect()
   return (
     rect.top >= 0 &&

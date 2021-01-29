@@ -277,6 +277,75 @@ section .progress {
   animation: swing-in-bottom-fwd 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 400ms both;
 }
 
+@media (max-width: 1100px) {
+  section {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+    overflow: hidden;
+    padding: 3rem 0 3rem 5rem;
+  }
+  section .main-title {
+    font-size: 4rem;
+  }
+  section .line,
+  section .line-expanded {
+    margin: 0 auto 1rem auto;
+  }
+  section .line-expanded {
+    width: 18rem;
+    -webkit-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+  }
+  section .sub-title {
+    font-size: 2rem;
+    margin: 1.5rem auto;
+  }
+  #banner-content {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    grid-gap: 1rem;
+    margin-left: 5rem;
+  }
+  #banner-content h1 {
+    font-size: 5rem;
+  }
+  #banner-content img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    width: 20rem;
+    margin-bottom: 1.5rem;
+  }
+  #about-me-profile {
+    margin: 3rem 0;
+  }
+  #about-me-profile img {
+    margin: auto;
+    width: 85%;
+  }
+  #about-me-profile-description h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  #about-me-profile-description p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+  }
+  #about-me-strengths {
+    width: 75%;
+    grid-gap: 2rem;
+  }
+  #about-me-strengths h4 {
+    font-size: 1.6rem;
+  }
+  #about-me-strengths p {
+    font-size: 1.5rem;
+  }
+}
+
 #banner {
   z-index: -5;
   height: 100vh;
@@ -764,5 +833,74 @@ footer .footer-content .social i {
 footer .footer-content .social i:hover {
   color: #d33e3e;
   border-color: #d33e3e;
+}
+
+@media (max-width: 1100px) {
+  section {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+    overflow: hidden;
+    padding: 3rem 0 3rem 5rem;
+  }
+  section .main-title {
+    font-size: 4rem;
+  }
+  section .line,
+  section .line-expanded {
+    margin: 0 auto 1rem auto;
+  }
+  section .line-expanded {
+    width: 18rem;
+    -webkit-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+  }
+  section .sub-title {
+    font-size: 2rem;
+    margin: 1.5rem auto;
+  }
+  #banner-content {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    grid-gap: 1rem;
+    margin-left: 5rem;
+  }
+  #banner-content h1 {
+    font-size: 5rem;
+  }
+  #banner-content img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    width: 20rem;
+    margin-bottom: 1.5rem;
+  }
+  #about-me-profile {
+    margin: 3rem 0;
+  }
+  #about-me-profile img {
+    margin: auto;
+    width: 85%;
+  }
+  #about-me-profile-description h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  #about-me-profile-description p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+  }
+  #about-me-strengths {
+    width: 75%;
+    grid-gap: 2rem;
+  }
+  #about-me-strengths h4 {
+    font-size: 1.6rem;
+  }
+  #about-me-strengths p {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
