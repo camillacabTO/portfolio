@@ -56,13 +56,13 @@ const run = () => {
     }
   })
 
-  projectsBoxes.forEach(box => {
-    if (isInViewport(firstProjectBox)) {
-      box.classList.contains('box-top')
-        ? box.classList.add('swing-in-top-fwd')
-        : box.classList.add('swing-in-bottom-fwd')
-    }
-  })
+  // projectsBoxes.forEach(box => {
+  //   if (isInViewport(firstProjectBox)) {
+  //     box.classList.contains('box-top')
+  //       ? box.classList.add('swing-in-top-fwd')
+  //       : box.classList.add('swing-in-bottom-fwd')
+  //   }
+  // })
 }
 
 window.addEventListener('load', run)

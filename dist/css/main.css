@@ -304,8 +304,8 @@ section .progress {
     margin: 1.5rem auto;
   }
   #banner-content {
-    -ms-grid-columns: 1fr !important;
-        grid-template-columns: 1fr !important;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     grid-gap: 1rem;
     margin-left: 5rem;
   }
@@ -343,6 +343,33 @@ section .progress {
   }
   #about-me-strengths p {
     font-size: 1.5rem;
+  }
+  #projects h2 {
+    max-width: 60rem;
+  }
+  #projects .projects {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  #projects .projects-box {
+    height: 25.7rem;
+    width: 30rem;
+    opacity: 1;
+  }
+  #projects .projects-box .overlay {
+    padding: 0 2rem;
+  }
+  #projects .projects-box .overlay div {
+    -webkit-transform: translateY(-25.7rem);
+            transform: translateY(-25.7rem);
+  }
+  #projects .projects-box .overlay button {
+    -webkit-transform: translateY(25.7rem);
+            transform: translateY(25.7rem);
+  }
+  #projects .projects-box .overlay a {
+    font-size: 1.6rem;
+    padding: 1rem;
   }
 }
 
@@ -596,7 +623,7 @@ section .progress {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  margin-top: 2.5rem;
+  margin: 4rem 0 1rem 0;
 }
 
 #projects .projects-box {
@@ -604,7 +631,7 @@ section .progress {
   height: 30rem;
   width: 35rem;
   overflow: hidden;
-  opacity: 0;
+  opacity: 1;
 }
 
 #projects .projects-box img {
@@ -862,8 +889,8 @@ footer .footer-content .social i:hover {
     margin: 1.5rem auto;
   }
   #banner-content {
-    -ms-grid-columns: 1fr !important;
-        grid-template-columns: 1fr !important;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     grid-gap: 1rem;
     margin-left: 5rem;
   }
@@ -901,6 +928,33 @@ footer .footer-content .social i:hover {
   }
   #about-me-strengths p {
     font-size: 1.5rem;
+  }
+  #projects h2 {
+    max-width: 60rem;
+  }
+  #projects .projects {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  #projects .projects-box {
+    height: 25.7rem;
+    width: 30rem;
+    opacity: 1;
+  }
+  #projects .projects-box .overlay {
+    padding: 0 2rem;
+  }
+  #projects .projects-box .overlay div {
+    -webkit-transform: translateY(-25.7rem);
+            transform: translateY(-25.7rem);
+  }
+  #projects .projects-box .overlay button {
+    -webkit-transform: translateY(25.7rem);
+            transform: translateY(25.7rem);
+  }
+  #projects .projects-box .overlay a {
+    font-size: 1.6rem;
+    padding: 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
