@@ -65,6 +65,7 @@ button:hover {
 }
 
 label {
+  display: block;
   font-size: 2.2em;
 }
 
@@ -301,7 +302,7 @@ section .progress {
   }
   section .sub-title {
     font-size: 2rem;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
   }
   #banner-content {
     -ms-grid-columns: 1fr;
@@ -317,7 +318,7 @@ section .progress {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     width: 20rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
   }
   #about-me-profile {
     margin: 3rem 0;
@@ -373,12 +374,61 @@ section .progress {
   }
 }
 
+@media (max-width: 798px) {
+  #banner {
+    background-position: right -15rem top 0;
+  }
+  #banner h1 {
+    font-size: 4.2rem;
+  }
+  #banner p {
+    font-size: 2rem;
+  }
+  #about-me-profile {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 4rem 0;
+    width: 85%;
+  }
+  #about-me-profile img {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+  #about-me-profile-description {
+    padding: 1.3rem 3rem;
+  }
+  #about-me-strengths {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 70%;
+  }
+  #projects h2 {
+    max-width: 40rem;
+  }
+  #projects .projects {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #contact h2 {
+    max-width: 40rem;
+  }
+  #contact form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #banner {
   z-index: -5;
   height: 100vh;
   border-bottom: 2px #d33e3e;
   background: url("../img/eclipse5.png");
-  background-position: right -5rem bottom 12rem;
+  background-position: right -5rem top -12rem;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -886,7 +936,7 @@ footer .footer-content .social i:hover {
   }
   section .sub-title {
     font-size: 2rem;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
   }
   #banner-content {
     -ms-grid-columns: 1fr;
@@ -902,7 +952,7 @@ footer .footer-content .social i:hover {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     width: 20rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
   }
   #about-me-profile {
     margin: 3rem 0;
@@ -955,6 +1005,55 @@ footer .footer-content .social i:hover {
   #projects .projects-box .overlay a {
     font-size: 1.6rem;
     padding: 1rem;
+  }
+}
+
+@media (max-width: 798px) {
+  #banner {
+    background-position: right -15rem top 0;
+  }
+  #banner h1 {
+    font-size: 4.2rem;
+  }
+  #banner p {
+    font-size: 2rem;
+  }
+  #about-me-profile {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 4rem 0;
+    width: 85%;
+  }
+  #about-me-profile img {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+  #about-me-profile-description {
+    padding: 1.3rem 3rem;
+  }
+  #about-me-strengths {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 70%;
+  }
+  #projects h2 {
+    max-width: 40rem;
+  }
+  #projects .projects {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #contact h2 {
+    max-width: 40rem;
+  }
+  #contact form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=main.css.map */
