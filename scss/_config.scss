@@ -79,16 +79,16 @@ button {
 
 label {
   display: block;
-  font-size: 2.2em;
+  font-size: 2.2rem;
 }
 
 input,
 textarea {
   display: block;
   width: 100%;
-  border-radius: 0.6rem;
   background-color: transparent;
-  border: solid 2px $secondary-color-red;
+  border: solid 1px $secondary-color-red;
+  border-radius: 5px;
   color: $secondary-color-yellow;
   margin-top: 0.3rem;
   padding: 0.5rem;
@@ -109,7 +109,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  border: 2px solid $secondary-color-red;
+  border: solid 1px $secondary-color-red;
   -webkit-text-fill-color: $secondary-color-yellow;
   -webkit-box-shadow: 0 0 0px 1000px $lighter-background-color inset;
   transition: background-color 5000s ease-in-out 0s;
