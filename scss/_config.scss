@@ -5,8 +5,12 @@ $lighter-background-color: #161d43;
 $main-color-orange: #fbbe3f;
 $secondary-color-yellow: #fae939;
 $secondary-color-red: #d33e3e;
-$eclipse-logo-img: url('../img/eclipse5.png');
 $main-transition: all ease-in 250ms;
+
+
+// 00002c (jelly fish)
+// 0D0B2E (darker, more grey)
+// #17012d (dark purple, gradient)
 
 * {
   padding: 0;
@@ -16,14 +20,9 @@ $main-transition: all ease-in 250ms;
 
 html {
   font-size: 62.5%;
-  background-image: linear-gradient(
-    to right bottom,
-    #000839,
-    #07093d,
-    #110841,
-    #1b0644,
-    #250247
-  );
+  // background: linear-gradient(86deg, rgba(13,11,46,1) 3%, rgba(37,2,71,1) 100%);
+  // background: linear-gradient(86deg, rgba(13,11,46,1) 3%, rgba(32,2,61,1) 100%);
+  background: linear-gradient(86deg, rgba(13,11,46,1) 3%, rgba(23,1,45,1) 100%);
 }
 
 body {

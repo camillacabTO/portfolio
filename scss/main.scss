@@ -2,14 +2,15 @@
 @import 'utils';
 @import 'mobile';
 
+
 #banner {
   z-index: -5;
   height: 100vh;
   border-bottom: 2px $secondary-color-red;
-  background: $eclipse-logo-img;
-  background-position: right -5rem top -12rem;
-  background-size: contain;
-  background-repeat: no-repeat;
+  // background: $eclipse-logo-img;
+  // background-position: right -5rem top -12rem;
+  // background-size: cover;
+  // background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -199,104 +200,41 @@
 #projects {
   min-height: 100vh;
   height: fit-content;
-
-  .projects {
-    display: grid;
-    // grid-template-columns: repeat(3, minmax(25rem, 1fr));
-    grid-template-columns: repeat(3, minmax(30rem, 1fr));
-    place-items: center;
-    margin: 4rem 0 1rem 0;
-    width: 70%;
-
-    &-box {
-      position: relative;
-      overflow: hidden;
-      opacity: 1;
-
-      img {
-        display: block;
-        height: 100%;
-        width: 100%;
-      }
-
-      .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        background: $main-color-orange;
-        align-items: center;
-        justify-content: space-around;
-        transition: all 450ms ease-in-out 0s;
-        opacity: 0;
-        overflow: hidden;
-        padding: 0 2.5rem;
-
-        div {
-          text-align: center;
-          transform: translateY(-30rem);
-        }
-
-        button {
-          background-color: transparent;
-          border: solid 3px $secondary-color-red;
-          transform: translateY(30rem);
-        }
-
-        div,
-        button {
-          transition: all 450ms ease-in-out 0.1s;
-        }
-
-        a {
-          display: block;
-          height: 100%;
-          line-height: 100%;
-          color: $background-color;
-          font-family: 'Poppins', sans-serif;
-          font-weight: 400;
-          font-size: 1.7rem;
-          padding: 1rem 1.5rem;
-        }
-      }
-
-      &:hover .overlay {
-        opacity: 0.95;
-      }
-
-      &:hover .overlay div {
-        transform: translate(0);
-      }
-
-      &:hover .overlay button {
-        transform: translate(0);
-      }
-    }
-
-    &-title {
-      color: $background-color;
-      font-weight: 700;
-      font-size: 2.3rem;
-    }
-
-    &-tech {
-      color: $secondary-color-red;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 400;
-      font-size: 2rem;
-    }
+  
+  .card-image a{
+    background-color: #d33e3e;
   }
-  i {
-    color: $main-color-orange;
-    padding-left: 1rem;
-    transition: $main-transition;
+
+  .card-content, .card-reveal, .card-action {
+    background: $main-color-orange;
+    color: #000839; 
+    font-size: 1.5rem;
+    // height: 100%;
+  }
+
+  .card-action a {  
+    font-weight: 600;
+    color: #000839; 
+
     &:hover {
       color: $secondary-color-red;
     }
   }
+
+  .projects-grid {
+    margin: 2rem 0;
+  }
+
+  //projects-grid -- add margins in mobile
+
+  .fa-github {
+      color: $main-color-orange;
+      padding-left: 1rem;
+      transition: $main-transition;
+      &:hover {
+        color: $secondary-color-red;
+      }
+    }
 }
 
 #skills {
