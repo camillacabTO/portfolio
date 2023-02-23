@@ -15,16 +15,17 @@
     <body id="body">
         <nav id="nav-bar">
             <ul>
-                <li><a href="#banner"><span>HOME</span><i class="fas fa-home fa-2x"></i></a></li>
-                <li><a href="#about-me"><span>ABOUT ME</span><i class="fas fa-user fa-2x"></i></a></li>
+                <li><a href="#banner"><span>HOME</span><i class="fas fa-home fa-2x"></i></a>
+                </li>
+                <li><a href="#about-me"><span>ABOUT</span><i class="fas fa-user fa-2x"></i></a></li>
                 <li><a href="#projects"><span>PROJECTS</span><i class="fas fa-code fa-2x"></i></a></li>
                 <li><a href="#skills"><span>SKILLS</span><i class="fas fa-sliders-h fa-2x"></i></i></a></li>
-                <li><a href="#contact"><span>CONTACT ME</span><i class="fas fa-comment-alt fa-2x"></i></a></li>
+                <li><a href="#contact"><span>CONTACT</span><i class="fas fa-comment-alt fa-2x"></i></a></li>
             </ul>
         </nav>
         <header id="banner">
             <div id="banner-content">
-                <h1>Hello World,<br> I am Camila Barros,<br> a full-stack web developer.</h1>
+                <h1>Hello World,<br> I am FistName LastName,<br> a full-stack web developer.</h1>
                 <img src="./img/logo2.png" alt="camila barros logo">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique ut nulla pharetra nulla semper.
                     Purus
@@ -152,56 +153,57 @@
             <h1 class="main-title">TECHNICAL SKILLS</h1>
             <div class="line"></div>
             <div class="skill">
-                <i class="fab fa-css3-alt fa-5x"></i>
-                <div class="skill-wrap">
-                    <h4>HTML / CSS / SASS:</h4>
-                    <div class="skill-bar">
-                        <div class="progress" id="css"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill">
                 <i class="fab fa-js-square fa-5x"></i>
                 <div class="skill-wrap">
-                    <h4>JavaScript / jQuery:</h4>
+                    <h4>JavaScript:</h4>
                     <div class="skill-bar">
-                        <div class="progress" id="js"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill">
-                <i class="fab fa-node fa-5x"></i>
-                <div class="skill-wrap">
-                    <h4>Node.js / Express / MongoDB:</h4>
-                    <div class="skill-bar">
-                        <div class="progress" id="node"></div>
+                        <div class="percentage" id="js"></div>
                     </div>
                 </div>
             </div>
             <div class="skill">
                 <i class="fab fa-react fa-5x"></i>
                 <div class="skill-wrap">
-                    <h4>React.js:</h4>
+                    <h4>React / Redux / Firebase:</h4>
                     <div class="skill-bar">
-                        <div class="progress" id="react"></div>
-                    </div>
-                </div>
-            </div>
-            <div class=" skill">
-                <img src="./img/api.svg" />
-                <div class="skill-wrap">
-                    <h4>HTTP / RESTful API:</h4>
-                    <div class="skill-bar">
-                        <div class="progress" id="api"></div>
+                        <div class="percentage" id="react"></div>
                     </div>
                 </div>
             </div>
             <div class="skill">
-                <img src="./img/sql.svg" />
+                <img src="./img/nextjs-2.svg"
+                    style="filter: invert(73%) sepia(49%) saturate(625%) hue-rotate(349deg) brightness(102%) contrast(97%)" />
                 <div class="skill-wrap">
-                    <h4>MySQL / PL/SQL:</h4>
+                    <h4>NextJS:</h4>
                     <div class="skill-bar">
-                        <div class="progress" id="sql"></div>
+                        <div class="percentage" id="next"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt fa-5x"></i>
+                <div class="skill-wrap">
+                    <h4>HTML / CSS / SASS:</h4>
+                    <div class="skill-bar">
+                        <div class="percentage" id="css"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fab fa-node fa-5x"></i>
+                <div class="skill-wrap">
+                    <h4>NodeJS / Express / MongoDB:</h4>
+                    <div class="skill-bar">
+                        <div class="percentage" id="node"></div>
+                    </div>
+                </div>
+            </div>
+            <div class=" skill">
+                <i class="fab fa-python fa-5x"></i>
+                <div class="skill-wrap">
+                    <h4>Python:</h4>
+                    <div class="skill-bar">
+                        <div class="percentage" id="python"></div>
                     </div>
                 </div>
             </div>
@@ -210,16 +212,7 @@
                 <div class="skill-wrap">
                     <h4>Java / JSP / Servlet:</h4>
                     <div class="skill-bar">
-                        <div class="progress" id="java"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill">
-                <i class="fab fa-swift fa-5x"></i>
-                <div class="skill-wrap">
-                    <h4>iOS / Swift:</h4>
-                    <div class="skill-bar">
-                        <div class="progress" id="ios"></div>
+                        <div class="percentage" id="java"></div>
                     </div>
                 </div>
             </div>
@@ -228,7 +221,16 @@
                 <div class="skill-wrap">
                     <h4>C++:</h4>
                     <div class="skill-bar">
-                        <div class="progress" id="cpp"></div>
+                        <div class="percentage" id="cpp"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <img src="./img/sql.svg" />
+                <div class="skill-wrap">
+                    <h4>MySQL / PL/SQL:</h4>
+                    <div class="skill-bar">
+                        <div class="percentage" id="sql"></div>
                     </div>
                 </div>
             </div>
@@ -239,22 +241,27 @@
             <h2 class="sub-title">Interested in working together? Please fill out the form below with your information
                 and I
                 will get back to you as soon as I can.</h2>
-            <form id="contact-form" action="/">
-                <label for="name">Name*: <input id="name" name="name" type="text" required></label>
-                <label for="email">Email*: <input id="email" name="email" type="email" required></label>
-                <label for="phone">Phone Number: <input id="phone" name="phone" type="text" required></label>
-                <label for="subject">Subject: <input id="subject" name="subject" type="text" required></label>
-                <label id="message" for="message">Message: <textarea name="message" id="message-box" cols="30"
-                        rows="6"></textarea></label>
+            <form id="contact-form" action="https://formsubmit.co/camillacab@hotmail.com" method="POST">
+                <label for="name">Name*: <input id="name" name="name" type="text" class="browser-default"
+                        required></label>
+                <label for="email">Email*: <input id="email" name="email" type="email" class="browser-default"
+                        required></label>
+                <label for="phone">Phone Number: <input id="phone" name="phone" type="text"
+                        class="browser-default"></label>
+                <label for="subject">Subject: <input id="subject" name="subject" type="text"
+                        class="browser-default"></label>
+                <label id="message" for="message">Message: <textarea cols="30" rows="7" name="message"
+                        id="message-box"></textarea></label>
+                <p id="submission-message">Email sent! Thanks for contacting me.</p>
                 <button id="submit-btn" type="submit">Submit</button>
             </form>
         </section>
         <footer>
             <div class="footer-content">
-                <p>Camila Barros &copy;2021</p>
+                <p>Camila Barros &copy;2023</p>
                 <div class="social">
-                    <a href=""><i class="fab fa-github fa-2x"></i></a>
-                    <a href=""><i class="far fa-envelope fa-2x"></i></a>
+                    <a href="https://github.com/camillacabTO"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="mailto: camillacab@hotmail.com""><i class=" far fa-envelope fa-2x"></i></a>
                     <a href=""><i class="fab fa-linkedin-in fa-2x"></i></a>
                 </div>
             </div>
@@ -266,13 +273,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="js/app.js"></script>
         <script src="js/index.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var gallery = document.querySelectorAll('.materialboxed')
-                M.Materialbox.init(gallery, {})
-            })
-        </script>
-
     </body>
 
 </html>
