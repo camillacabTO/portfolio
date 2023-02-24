@@ -6,7 +6,7 @@
 #banner {
   z-index: -5;
   height: 100vh;
-  padding-left: 4rem;
+  padding-left: 7rem;
   border-bottom: 2px $secondary-color-red;
   position: absolute;
   top: 0;
@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8rem;
+  gap: 4rem;
   flex-wrap: wrap;
 
   &-content {
@@ -52,14 +52,28 @@
         color: $secondary-color-yellow;
       }
     }
-
-
   }
 
-  img {
-    width: 40rem;
-    display: block;
+  #images {
+    display: absolute;
+    background-image: url('../img/mylayer2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40%;
+    height: 70%;
+    margin: 0 ;
+    opacity: .8;
+
+    img {
+      position:relative;
+      width: 40%;
+      left: 27%;
+      top: 29%;
+    }
   }
+
+
+
 
 }
 

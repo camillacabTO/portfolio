@@ -355,7 +355,7 @@ section .percentage {
 #banner {
   z-index: -5;
   height: 100vh;
-  padding-left: 4rem;
+  padding-left: 7rem;
   border-bottom: 2px #d33e3e;
   position: absolute;
   top: 0;
@@ -365,7 +365,7 @@ section .percentage {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8rem;
+  gap: 4rem;
   flex-wrap: wrap;
 }
 #banner-content {
@@ -395,9 +395,21 @@ section .percentage {
 #banner-content button a {
   color: #fae939;
 }
-#banner img {
-  width: 40rem;
-  display: block;
+#banner #images {
+  display: absolute;
+  background-image: url("../img/mylayer2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40%;
+  height: 70%;
+  margin: 0;
+  opacity: 0.8;
+}
+#banner #images img {
+  position: relative;
+  width: 40%;
+  left: 27%;
+  top: 29%;
 }
 
 #nav-bar {
