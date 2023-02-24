@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 form.addEventListener('submit', (e) => {
   // e.preventDefault()
+  e.target.reset()
   subMessage.style.display = 'block'
 })
 
