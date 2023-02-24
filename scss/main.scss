@@ -20,17 +20,13 @@
   flex-wrap: wrap;
 
   &-content {
-    // display: grid;
-    // grid-template-columns: 3.5fr 1fr;
-    // grid-gap: 3rem;
-    // position: absolute;
     width: 40%;
 
     h1 {
       margin: auto 0;
       font-weight: 700;
       font-size: 6rem;
-      line-height: 1;
+      line-height: 0.9;
       animation: heading 1s forwards ease-out 500ms;
 
       span {
@@ -44,6 +40,20 @@
       line-height: 1.3;
       animation: text 1s forwards ease-out 1s;
     }
+
+    button {
+      margin-top: 1.5rem;
+      width: 20rem;
+      animation: text 1s forwards ease-out 1s;
+      // cursor: pointer;
+      // z-index: 100;
+      
+      a{
+        color: $secondary-color-yellow;
+      }
+    }
+
+
   }
 
   img {
