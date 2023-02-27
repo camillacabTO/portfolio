@@ -90,7 +90,7 @@ window.scroll({
 
 // Scroll certain amounts from current position
 window.scrollBy({
-  top: 100, // could be negative value
+  top: 0,
   left: 0,
   behavior: 'smooth',
 })
@@ -99,3 +99,6 @@ window.scrollBy({
 document.querySelector('.hello section').scrollIntoView({
   behavior: 'smooth',
 })
+
+document.getElementById('action').onclick = (e) =>
+  history.pushState({}, '', '#about')

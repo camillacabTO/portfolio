@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Poppins:wght@300;400;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -179,6 +179,17 @@ select:-webkit-autofill:focus {
     opacity: 1;
   }
 }
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
 section {
   height: 100vh;
   width: 85%;
@@ -353,66 +364,58 @@ section .percentage {
   }
 }
 #banner {
-  z-index: -5;
   height: 100vh;
   padding-left: 7rem;
-  border-bottom: 2px #d33e3e;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
-  flex-wrap: wrap;
+}
+#banner a:link:active, #banner a:visited {
+  color: #fbbe3f;
+}
+#banner p#action {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin: 0;
+}
+#banner p#action i {
+  font-size: 2.2rem;
+  color: #d33e3e;
+  animation: down 1.5s infinite;
 }
 #banner-content {
-  width: 40%;
+  width: 70%;
+  height: 100%;
+  padding: 2.5rem 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+#banner-content img {
+  width: 15%;
 }
 #banner-content h1 {
-  margin: auto 0;
   font-weight: 700;
-  font-size: 6rem;
-  line-height: 0.9;
+  font-size: 5rem;
+  line-height: 1.2;
   animation: heading 1s forwards ease-out 500ms;
 }
 #banner-content h1 span {
-  font-size: 3.5rem;
-  font-weight: 500;
+  color: #d33e3e;
 }
 #banner-content p {
-  font-size: 1.9rem;
+  font-size: 2rem;
   line-height: 1.3;
   animation: text 1s forwards ease-out 1s;
 }
-#banner-content button {
-  margin-top: 1.5rem;
-  width: 20rem;
-  animation: text 1s forwards ease-out 1s;
-}
-#banner-content button a {
-  color: #fae939;
-}
-#banner #images {
-  display: absolute;
-  background-image: url("../img/mylayer2.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 40%;
-  height: 70%;
-  margin: 0;
-  opacity: 0.8;
-}
-#banner #images img {
-  position: relative;
-  width: 40%;
-  left: 27%;
-  top: 29%;
-}
 
 #nav-bar {
+  z-index: 50;
   position: sticky;
   top: 0;
   left: 0;
