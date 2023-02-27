@@ -44,7 +44,7 @@ h4 {
 button {
   height: 4rem;
   border-radius: 0.6rem;
-  width: 60%;
+  min-width: 30%;
   margin: 0 auto;
   background: #d33e3e;
   border: none;
@@ -71,17 +71,13 @@ textarea {
   display: block;
   width: 100%;
   background-color: transparent;
-  border: solid 1px #d33e3e;
-  border-radius: 5px;
+  border: solid 0.6px #d33e3e;
+  border-radius: 3px;
   color: #fae939;
   margin-top: 0.3rem;
-  padding: 0.5rem;
+  padding: 0.8rem;
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
-}
-
-input {
-  height: 4rem;
+  font-size: 1.5rem;
 }
 
 input:-webkit-autofill,
@@ -243,7 +239,8 @@ section .percentage {
     height: fit-content;
     margin: 0;
     overflow: hidden;
-    padding: 3rem 0 3rem 5rem;
+    padding: 3rem 0 3rem 6rem;
+    border: green 1px solid;
   }
   section .main-title {
     font-size: 4rem;
@@ -338,6 +335,8 @@ section .percentage {
     text-align: center;
   }
   #contact form {
+    padding: 2rem;
+    width: 90%;
     grid-template-columns: 1fr;
     grid-row-gap: 2rem;
   }
@@ -604,7 +603,8 @@ section .percentage {
   margin-bottom: 0;
 }
 #contact form {
-  width: 80%;
+  width: 65%;
+  margin-top: 3rem;
   height: fit-content;
   color: #fbbe3f;
   border-radius: 0.5rem;
@@ -621,6 +621,9 @@ section .percentage {
 }
 #contact form label, #contact form input, #contact form textarea {
   color: #fbbe3f;
+}
+#contact form label {
+  font-size: 1.7rem;
 }
 #contact form textarea {
   min-height: 17rem;
@@ -674,7 +677,8 @@ footer .footer-content .social i:hover {
     height: fit-content;
     margin: 0;
     overflow: hidden;
-    padding: 3rem 0 3rem 5rem;
+    padding: 3rem 0 3rem 6rem;
+    border: green 1px solid;
   }
   section .main-title {
     font-size: 4rem;
@@ -769,6 +773,8 @@ footer .footer-content .social i:hover {
     text-align: center;
   }
   #contact form {
+    padding: 2rem;
+    width: 90%;
     grid-template-columns: 1fr;
     grid-row-gap: 2rem;
   }

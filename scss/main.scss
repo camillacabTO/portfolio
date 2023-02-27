@@ -299,7 +299,8 @@
 #contact {
   margin-bottom: 0;
   form {
-    width: 80%;
+    width: 65%;
+    margin-top: 3rem;
     height: fit-content;
     color: $main-color-orange;
     border-radius: 0.5rem;
@@ -318,6 +319,11 @@
 
     label, input, textarea{
       color: $main-color-orange;
+    }
+    
+    label {
+      font-size: 1.7rem;
+
     }
 
     textarea {

@@ -59,7 +59,7 @@ h4 {
 button {
   height: 4rem;
   border-radius: 0.6rem;
-  width: 60%;
+  min-width: 30%;
   margin: 0 auto;
   background: $secondary-color-red;
   border: none;
@@ -87,17 +87,13 @@ textarea {
   display: block;
   width: 100%;
   background-color: transparent;
-  border: solid 1px $secondary-color-red;
-  border-radius: 5px;
+  border: solid 0.6px $secondary-color-red;
+  border-radius: 3px;
   color: $secondary-color-yellow;
   margin-top: 0.3rem;
-  padding: 0.5rem;
+  padding: 0.8rem;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
-}
-
-input {
-  height: 4rem;
+  font-size: 1.5rem;
 }
 
 input:-webkit-autofill,
