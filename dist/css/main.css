@@ -376,6 +376,7 @@ section .percentage {
   color: #fbbe3f;
 }
 #banner p#action {
+  cursor: pointer;
   font-size: 1.8rem;
   font-weight: 300;
   margin: 0;
@@ -388,7 +389,7 @@ section .percentage {
 #banner-content {
   width: 70%;
   height: 100%;
-  padding: 2.5rem 0;
+  padding: 2.8rem 0;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -606,6 +607,7 @@ section .percentage {
   width: 80%;
   height: fit-content;
   color: #fbbe3f;
+  border-radius: 0.5rem;
   background: #161d43;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
