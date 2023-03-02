@@ -26,7 +26,7 @@ const run = () => {
     if (isInViewport(bar)) {
       switch (bar.id) {
         case 'css':
-          bar.style.width = '65%'
+          bar.style.width = '73%'
           break
         case 'js':
           bar.style.width = '85%'
@@ -41,7 +41,7 @@ const run = () => {
           bar.style.width = '60%'
           break
         case 'python':
-          bar.style.width = '60%'
+          bar.style.width = '65%'
           break
         case 'sql':
           bar.style.width = '70%'
