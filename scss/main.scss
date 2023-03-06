@@ -135,12 +135,12 @@
   &-profile {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin: 4rem 0;
+    margin: 5rem 0;
     width: 85%;
 
     img {
-      margin-left: 2rem;
-      width: 80%;
+      margin: auto;
+      width: 75%;
     }
   }
 
@@ -149,7 +149,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 3rem;
+    padding: 2rem 2.5rem;
     background-color: $lighter-background-color;
     border-left: 3px solid $secondary-color-red;
 
@@ -207,6 +207,19 @@
 #projects {
   min-height: 100vh;
   height: fit-content;
+
+  .card img {
+    height: 19rem;
+  }
+
+  .projects-grid {
+    margin: 2rem 0;
+  }
+
+  .card {
+    width: 34rem;
+    height: 416px;
+  }
   
   .card-image a{
     background-color: #d33e3e;
@@ -219,6 +232,14 @@
     // height: 100%;
   }
 
+  .card-reveal {
+   
+  }
+
+  .card-action {
+    // height: 20%;
+  }
+
   .card-action a {  
     font-weight: 600;
     color: #000839; 
@@ -228,9 +249,7 @@
     }
   }
 
-  .projects-grid {
-    margin: 2rem 0;
-  }
+
 
   //projects-grid -- add margins in mobile
 

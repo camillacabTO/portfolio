@@ -470,19 +470,19 @@ section .percentage {
 #about-me-profile {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin: 4rem 0;
+  margin: 5rem 0;
   width: 85%;
 }
 #about-me-profile img {
-  margin-left: 2rem;
-  width: 80%;
+  margin: auto;
+  width: 75%;
 }
 #about-me-profile-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 3rem;
+  padding: 2rem 2.5rem;
   background-color: #161d43;
   border-left: 3px solid #d33e3e;
 }
@@ -531,6 +531,16 @@ section .percentage {
   min-height: 100vh;
   height: fit-content;
 }
+#projects .card img {
+  height: 19rem;
+}
+#projects .projects-grid {
+  margin: 2rem 0;
+}
+#projects .card {
+  width: 34rem;
+  height: 416px;
+}
 #projects .card-image a {
   background-color: #d33e3e;
 }
@@ -545,9 +555,6 @@ section .percentage {
 }
 #projects .card-action a:hover {
   color: #d33e3e;
-}
-#projects .projects-grid {
-  margin: 2rem 0;
 }
 #projects .fa-github {
   color: #fbbe3f;
