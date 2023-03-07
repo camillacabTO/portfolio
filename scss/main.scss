@@ -208,17 +208,29 @@
   min-height: 100vh;
   height: fit-content;
 
+  .projects-grid {
+    margin: 2rem auto;
+    width: 85%;
+    display: grid;
+    justify-content: center;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, 34rem);
+
+  }
+
   .card img {
     height: 19rem;
   }
 
-  .projects-grid {
-    margin: 2rem 0;
-  }
+  .card-content {
+    height: 172px;
 
-  .card {
-    width: 34rem;
-    height: 416px;
+    p, span {
+      line-height: normal;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  
   }
   
   .card-image a{
@@ -356,6 +368,13 @@
       display: none;
     }
   }
+}
+
+blockquote {
+  margin: 0 auto;
+  font-size: 1.6rem;
+  text-align: center;
+  font-style: oblique;
 }
 
 footer {

@@ -298,10 +298,6 @@ section .percentage {
   #projects h2 {
     max-width: 60rem;
   }
-  #projects .row {
-    max-width: 85%;
-    padding-left: 1rem;
-  }
 }
 @media (max-width: 798px) {
   #banner {
@@ -531,15 +527,24 @@ section .percentage {
   min-height: 100vh;
   height: fit-content;
 }
+#projects .projects-grid {
+  margin: 2rem auto;
+  width: 85%;
+  display: grid;
+  justify-content: center;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, 34rem);
+}
 #projects .card img {
   height: 19rem;
 }
-#projects .projects-grid {
-  margin: 2rem 0;
+#projects .card-content {
+  height: 172px;
 }
-#projects .card {
-  width: 34rem;
-  height: 416px;
+#projects .card-content p, #projects .card-content span {
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
 }
 #projects .card-image a {
   background-color: #d33e3e;
@@ -642,6 +647,13 @@ section .percentage {
   display: none;
 }
 
+blockquote {
+  margin: 0 auto;
+  font-size: 1.6rem;
+  text-align: center;
+  font-style: oblique;
+}
+
 footer {
   height: 7.5rem;
   width: 100%;
@@ -742,10 +754,6 @@ footer .footer-content .social i:hover {
   }
   #projects h2 {
     max-width: 60rem;
-  }
-  #projects .row {
-    max-width: 85%;
-    padding-left: 1rem;
   }
 }
 @media (max-width: 798px) {
