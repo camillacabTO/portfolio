@@ -367,7 +367,8 @@ section .percentage {
   width: 100%;
   overflow: hidden;
 }
-#banner a:link:active, #banner a:visited {
+#banner a:link:active,
+#banner a:visited {
   color: #fbbe3f;
 }
 #banner p#action {
@@ -488,7 +489,7 @@ section .percentage {
 }
 #about-me-profile-description p {
   font-size: 1.9rem;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 #about-me-strengths {
   display: grid;
@@ -531,7 +532,7 @@ section .percentage {
 }
 #projects .projects-grid {
   margin: 2rem auto;
-  width: 85%;
+  width: 95%;
   display: grid;
   justify-content: center;
   grid-gap: 1rem;
@@ -543,7 +544,8 @@ section .percentage {
 #projects .card-content {
   height: 172px;
 }
-#projects .card-content p, #projects .card-content span {
+#projects .card-content p,
+#projects .card-content span {
   line-height: normal;
   display: inline-block;
   vertical-align: middle;
@@ -551,7 +553,9 @@ section .percentage {
 #projects .card-image a {
   background-color: #d33e3e;
 }
-#projects .card-content, #projects .card-reveal, #projects .card-action {
+#projects .card-content,
+#projects .card-reveal,
+#projects .card-action {
   background: #fbbe3f;
   color: #000839;
   font-size: 1.5rem;
@@ -633,7 +637,9 @@ section .percentage {
 #contact form #submit-btn {
   grid-column: 1/3;
 }
-#contact form label, #contact form input, #contact form textarea {
+#contact form label,
+#contact form input,
+#contact form textarea {
   color: #fbbe3f;
 }
 #contact form label {
