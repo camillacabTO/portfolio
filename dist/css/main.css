@@ -539,10 +539,10 @@ section .percentage {
   grid-template-columns: repeat(auto-fit, 34rem);
 }
 #projects .card img {
-  height: 19rem;
+  height: 20rem;
 }
 #projects .card-content {
-  height: 172px;
+  height: 180px;
 }
 #projects .card-content p,
 #projects .card-content span {
@@ -558,7 +558,10 @@ section .percentage {
 #projects .card-action {
   background: #fbbe3f;
   color: #000839;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+}
+#projects .card-reveal {
+  font-size: 1.7rem;
 }
 #projects .card-action a {
   font-weight: 600;
