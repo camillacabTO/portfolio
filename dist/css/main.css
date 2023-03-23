@@ -367,7 +367,8 @@ section .percentage {
   width: 100%;
   overflow: hidden;
 }
-#banner a:link:active,
+#banner a:link,
+#banner a:active,
 #banner a:visited {
   color: #fbbe3f;
 }
@@ -381,6 +382,11 @@ section .percentage {
   font-size: 2.2rem;
   color: #d33e3e;
   animation: down 1.5s infinite;
+}
+#banner p#action a:active,
+#banner p#action a:link,
+#banner p#action a:visited {
+  color: #fbbe3f;
 }
 #banner-content {
   width: 70%;
