@@ -257,7 +257,6 @@ section .percentage {
     margin: 2rem auto;
   }
   #banner {
-    margin: 3rem 1.7rem 0;
     flex-direction: column-reverse;
   }
   #banner-content {
@@ -330,6 +329,9 @@ section .percentage {
   h2.sub-title {
     margin: 0 1rem;
   }
+  #banner img {
+    display: none;
+  }
   #about-me-profile-description {
     padding: 1rem;
   }
@@ -348,6 +350,7 @@ section .percentage {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 0;
   }
   #nav-bar ul a {
     height: 6rem;
@@ -388,6 +391,10 @@ section .percentage {
   #contact form #message,
   #contact form #submit-btn {
     grid-column: 1;
+  }
+  #projects {
+    width: 85%;
+    margin: 0 auto;
   }
   .skill i,
   .skill img {
@@ -791,7 +798,6 @@ footer .footer-content .social i:hover {
     margin: 2rem auto;
   }
   #banner {
-    margin: 3rem 1.7rem 0;
     flex-direction: column-reverse;
   }
   #banner-content {
@@ -864,6 +870,9 @@ footer .footer-content .social i:hover {
   h2.sub-title {
     margin: 0 1rem;
   }
+  #banner img {
+    display: none;
+  }
   #about-me-profile-description {
     padding: 1rem;
   }
@@ -882,6 +891,7 @@ footer .footer-content .social i:hover {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 0;
   }
   #nav-bar ul a {
     height: 6rem;
@@ -922,6 +932,10 @@ footer .footer-content .social i:hover {
   #contact form #message,
   #contact form #submit-btn {
     grid-column: 1;
+  }
+  #projects {
+    width: 85%;
+    margin: 0 auto;
   }
   .skill i,
   .skill img {
