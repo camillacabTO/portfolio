@@ -75,8 +75,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  height: 100vh;
-  max-height: 120vh;
+  height: 120vh;
   border-right: 2px solid $secondary-color-red;
   width: 6.3rem;
   display: flex;
@@ -87,10 +86,10 @@
   ul {
     height: 80%;
     display: flex;
-
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 20vh;
 
     i {
       color: $main-color-orange;
@@ -373,6 +372,9 @@ blockquote {
   font-size: 1.6rem;
   text-align: center;
   font-style: oblique;
+  border: none;
+  padding: 0 1rem;
+  padding-left: 6.3rem;
 }
 
 footer {

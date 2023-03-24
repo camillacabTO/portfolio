@@ -240,7 +240,6 @@ section .percentage {
     margin: 0;
     overflow: hidden;
     padding: 3rem 0 3rem 6rem;
-    border: green 1px solid;
   }
   section .main-title {
     font-size: 4rem;
@@ -261,14 +260,9 @@ section .percentage {
     margin: 3rem 1.7rem 0;
     flex-direction: column-reverse;
   }
-  #banner img {
-    display: none;
-  }
   #banner-content {
     width: 80%;
-  }
-  #banner-content h1 {
-    font-size: 5rem;
+    justify-content: space-around;
   }
   #about-me-profile {
     margin: 3rem 0;
@@ -309,6 +303,9 @@ section .percentage {
   #banner p {
     font-size: 2rem;
   }
+  #banner img {
+    display: none;
+  }
   #about-me-profile {
     grid-template-columns: 1fr;
     margin: 4rem 0;
@@ -327,6 +324,58 @@ section .percentage {
   }
 }
 @media (max-width: 625px) {
+  section {
+    padding-left: 0;
+  }
+  h2.sub-title {
+    margin: 0 1rem;
+  }
+  #about-me-profile-description {
+    padding: 1rem;
+  }
+  #nav-bar {
+    z-index: 50;
+    position: sticky;
+    height: 6rem;
+    border-right: none;
+    border-bottom: 2px solid #d33e3e;
+    width: 100%;
+    background-color: #0d0b2e !important;
+  }
+  #nav-bar ul {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #nav-bar ul a {
+    height: 6rem;
+    line-height: 6rem;
+  }
+  #nav-bar ul a i {
+    padding-top: 2rem;
+  }
+  #nav-bar ul span {
+    margin: auto;
+    width: 50%;
+    height: 5rem;
+  }
+  #banner {
+    height: fit-content;
+    padding-left: 0;
+    position: static;
+    width: 100%;
+    overflow: none;
+    margin: 0 auto;
+  }
+  #banner h1 {
+    font-size: 3.5rem;
+  }
+  #banner p {
+    font-size: 1.7rem;
+    margin: 3rem 0;
+  }
   .main-title {
     text-align: center;
   }
@@ -340,17 +389,25 @@ section .percentage {
   #contact form #submit-btn {
     grid-column: 1;
   }
+  .skill i,
+  .skill img {
+    max-width: 6rem;
+  }
+  blockquote {
+    padding: 0;
+    margin: 0 1rem;
+  }
   footer {
     height: fit-content;
     margin-top: 6rem;
+    padding-left: 0;
   }
   footer .footer-content {
-    flex-direction: column;
     padding: 1.3rem;
   }
   footer .footer-content p {
     font-size: 1.4rem;
-    margin: 0 0 1rem 0;
+    margin: 0;
   }
   footer .footer-content .social i {
     width: 3.5rem;
@@ -422,8 +479,7 @@ section .percentage {
   position: sticky;
   top: 0;
   left: 0;
-  height: 100vh;
-  max-height: 120vh;
+  height: 120vh;
   border-right: 2px solid #d33e3e;
   width: 6.3rem;
   display: flex;
@@ -437,6 +493,7 @@ section .percentage {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 20vh;
 }
 #nav-bar ul i {
   color: #fbbe3f;
@@ -669,6 +726,9 @@ blockquote {
   font-size: 1.6rem;
   text-align: center;
   font-style: oblique;
+  border: none;
+  padding: 0 1rem;
+  padding-left: 6.3rem;
 }
 
 footer {
@@ -714,7 +774,6 @@ footer .footer-content .social i:hover {
     margin: 0;
     overflow: hidden;
     padding: 3rem 0 3rem 6rem;
-    border: green 1px solid;
   }
   section .main-title {
     font-size: 4rem;
@@ -735,14 +794,9 @@ footer .footer-content .social i:hover {
     margin: 3rem 1.7rem 0;
     flex-direction: column-reverse;
   }
-  #banner img {
-    display: none;
-  }
   #banner-content {
     width: 80%;
-  }
-  #banner-content h1 {
-    font-size: 5rem;
+    justify-content: space-around;
   }
   #about-me-profile {
     margin: 3rem 0;
@@ -783,6 +837,9 @@ footer .footer-content .social i:hover {
   #banner p {
     font-size: 2rem;
   }
+  #banner img {
+    display: none;
+  }
   #about-me-profile {
     grid-template-columns: 1fr;
     margin: 4rem 0;
@@ -801,6 +858,58 @@ footer .footer-content .social i:hover {
   }
 }
 @media (max-width: 625px) {
+  section {
+    padding-left: 0;
+  }
+  h2.sub-title {
+    margin: 0 1rem;
+  }
+  #about-me-profile-description {
+    padding: 1rem;
+  }
+  #nav-bar {
+    z-index: 50;
+    position: sticky;
+    height: 6rem;
+    border-right: none;
+    border-bottom: 2px solid #d33e3e;
+    width: 100%;
+    background-color: #0d0b2e !important;
+  }
+  #nav-bar ul {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #nav-bar ul a {
+    height: 6rem;
+    line-height: 6rem;
+  }
+  #nav-bar ul a i {
+    padding-top: 2rem;
+  }
+  #nav-bar ul span {
+    margin: auto;
+    width: 50%;
+    height: 5rem;
+  }
+  #banner {
+    height: fit-content;
+    padding-left: 0;
+    position: static;
+    width: 100%;
+    overflow: none;
+    margin: 0 auto;
+  }
+  #banner h1 {
+    font-size: 3.5rem;
+  }
+  #banner p {
+    font-size: 1.7rem;
+    margin: 3rem 0;
+  }
   .main-title {
     text-align: center;
   }
@@ -814,17 +923,25 @@ footer .footer-content .social i:hover {
   #contact form #submit-btn {
     grid-column: 1;
   }
+  .skill i,
+  .skill img {
+    max-width: 6rem;
+  }
+  blockquote {
+    padding: 0;
+    margin: 0 1rem;
+  }
   footer {
     height: fit-content;
     margin-top: 6rem;
+    padding-left: 0;
   }
   footer .footer-content {
-    flex-direction: column;
     padding: 1.3rem;
   }
   footer .footer-content p {
     font-size: 1.4rem;
-    margin: 0 0 1rem 0;
+    margin: 0;
   }
   footer .footer-content .social i {
     width: 3.5rem;
