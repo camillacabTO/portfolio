@@ -1,5 +1,4 @@
 const lines = document.querySelectorAll('.line')
-const progressBar = document.querySelectorAll('.percentage')
 const projectsBoxes = document.querySelectorAll('.projects-box')
 const firstProjectBox = document.querySelector('#first-project-box')
 const form = document.querySelector('#contact-form')
@@ -20,41 +19,6 @@ const run = () => {
   lines.forEach((line) => {
     if (isInViewport(line)) {
       line.classList.add('line-expanded')
-    }
-  })
-  progressBar.forEach((bar) => {
-    if (isInViewport(bar)) {
-      switch (bar.id) {
-        case 'css':
-          bar.style.width = '75%'
-          break
-        case 'js':
-          bar.style.width = '85%'
-          break
-        case 'node':
-          bar.style.width = '70%'
-          break
-        case 'react':
-          bar.style.width = '80%'
-          break
-        case 'next':
-          bar.style.width = '77%'
-          break
-        case 'python':
-          bar.style.width = '65%'
-          break
-        case 'sql':
-          bar.style.width = '70%'
-          break
-        case 'java':
-          bar.style.width = '55%'
-          break
-        case 'cpp':
-          bar.style.width = '50%'
-          break
-        default:
-          break
-      }
     }
   })
 

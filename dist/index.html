@@ -9,9 +9,6 @@
         <meta name="author" content="Camila Barros">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-            integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" /> -->
-            <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/8b327b4bae.css" crossorigin="anonymous"> -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" href="./css/main.css">
@@ -24,6 +21,7 @@
                 <li><a href="#banner"><span>HOME</span><i class="fas fa-home fa-2x"></i></a>
                 </li>
                 <li><a href="#about-me"><span>ABOUT</span><i class="fas fa-user fa-2x"></i></a></li>
+                <li><a href="#experience"><span>EXPERIENCE</span><i class="fas fa-briefcase fa-2x"></i></a></li>
                 <li><a href="#projects"><span>PROJECTS</span><i class="fas fa-code fa-2x"></i></a></li>
                 <li><a href="#skills"><span>SKILLS</span><i class="fas fa-sliders-h fa-2x"></i></a></li>
                 <li><a href="#contact"><span>CONTACT</span><i class="fas fa-comment-alt fa-2x"></i></a></li>
@@ -34,7 +32,7 @@
                 <img id="logo" src="./img/logo2.png" alt="camila barros logo">
                 <div>
                     <h1>Hello World,
-                        <span>I am Camila,</span> a Full-Stack Web Developer Who Turns Coffee into Code.
+                        <span>I am Camila,</span> a Full-Stack Software Developer Who Turns Coffee into Code.
                     </h1>
                     <p>I have a passion for building amazing web applications that solve real-world
                         problems, always looking for ways to make my code more efficient and effective. Whether it's
@@ -53,12 +51,7 @@
                 <img src="./img/photo.png" alt="Camila's profile picture">
                 <div id="about-me-profile-description">
                     <h3>WHO IS THIS GIRL?</h3>
-                    <p>Computer Programming college graduate and versatile Web Developer based in Toronto. My expertise
-                        includes
-                        JavaScript, HTML/CSS, React, NextJS, NodeJS, MongoDB, Firebase, and more. Building robust,
-                        feature-rich web applications is my driving force! Nothing excites me more than utilizing my
-                        skills to develop modern and responsive web applications that deliver exceptional functionality
-                        and remarkable user experience.</p>
+                    <p>My approach to software engineering is rooted in building robust, user-focused web applications. I strive to create solutions that are not only functional but also scalable and maintainable. I believe in the power of well-written code to drive innovation and create positive user experiences, and I am passionate about delivering software that exceeds expectations.</p>
                 </div>
             </div>
             <div id="about-me-strengths">
@@ -73,6 +66,29 @@
                 <div class="card-strenght">
                     <i class="fas fa-regular fa-comment-dots fa-5x"></i>
                     <h4>Strong communication skills</h4>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <h1 class="main-title">PROFESSIONAL EXPERIENCE</h1>
+            <div class="line"></div>
+            <div class="experience-container">
+                <div class="job">
+                    <div class="job-header">
+                        <h3>Full Stack Software Engineer</h3>
+                        <h4>Manulife</h4>
+                        <p class="job-date">May 2023 - Present</p>
+                    </div>
+                    <div class="job-details">
+                        <ul>
+                            <p>Focused on developing impactful software solutions within the dynamic life insurance, investments, securities, and wealth management sectors, driving technological advancements in complex financial ecosystems</p>
+                            <li><b>Microservices Architecture Expertise:</b> Engineered and deployed applications within a microservices architecture using Kubernetes (AKS), ensuring modular, scalable, and adaptable solutions for seamless integration into intricate systems.</li>
+                            <li><b>Comprehensive Technology Proficiency:</b> Proficient in a diverse tech stack, including JavaScript, TypeScript, React, Redux, NodeJS, MongoDB, MSSQL, ExpressJS, C#, and .NET, to build robust and feature-rich applications.</li>
+                            <li><b>Quality-Driven Developmentand and Reliability:</b> Ensured application reliability through rigorous unit testing with Jest, Vitest, and React Testing Library, adhering to best practices for quality assurance and performance optimization.</li>
+                            <li><b>Cloud Deployment and CI/CD Optimization:</b> Leveraged Azure for deploying scalable cloud solutions, streamlined development workflows with Jenkins for CI/CD pipelines, and optimized containerization using Docker.</li>
+                            <li><b>Agile Team Collaboration:</b> Actively contributed to Agile workflows (Scrum), participating in sprint planning, daily stand-ups, and retrospectives to foster enhanced team productivity and deliver efficient software solutions.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -423,85 +439,86 @@
         <section id="skills">
             <h1 class="main-title">TECHNICAL SKILLS</h1>
             <div class="line"></div>
-            <div class="skill">
-                <i class="fab fa-js-square fa-5x"></i>
-                <div class="skill-wrap">
-                    <h4>JavaScript:</h4>
-                    <div class="skill-bar">
-                        <div class="percentage" id="js"></div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="badge-container">
+                        <a href="#"><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" alt="Python" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="C#" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" /></a>
                     </div>
                 </div>
-            </div>
-            <div class="skill">
-                <i class="fab fa-react fa-5x"></i>
-                <div class="skill-wrap">
-                    <h4>React / Redux / Firebase:</h4>
-                    <div class="skill-bar">
-                        <div class="percentage" id="react"></div>
+                
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="badge-container">
+                        <a href="#"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" alt="Redux" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SASS" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Context--API-0081CB?style=for-the-badge&logo=react&logoColor=white" alt="Context API" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/React_Hooks-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React Hooks" /></a>
                     </div>
                 </div>
-            </div>
-            <div class="skill">
-                <img src="./img/nextjs-2.svg" alt="logo"
-                    style="filter: invert(73%) sepia(49%) saturate(625%) hue-rotate(349deg) brightness(102%) contrast(97%)" />
-                <div class="skill-wrap">
-                    <h4>NextJS:</h4>
-                    <div class="skill-bar">
-                        <div class="percentage" id="next"></div>
+                
+                <div class="skill-category">
+                    <h3>Backend & API Development</h3>
+                    <div class="badge-container">
+                        <a href="#"><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/ASP.NET_Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="ASP.NET Core" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/REST_APIs-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="REST APIs" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" alt="Swagger" /></a>
                     </div>
                 </div>
-            </div>
-            <div class="skill">
-                <i class="fab fa-css3-alt fa-5x"></i>
-                <div class="skill-wrap">
-                    <h4>HTML / CSS / SASS:</h4>
-                    <div class="skill-bar">
-                        <div class="percentage" id="css"></div>
+                
+                <div class="skill-category">
+                    <h3>Databases & ORMs</h3>
+                    <div class="badge-container">
+                        <a href="#"><img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Entity_Framework-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="Entity Framework" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white" alt="Prisma" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" /></a>
                     </div>
                 </div>
-            </div>
-            <div class="skill">
-                <i class="fab fa-node fa-5x"></i>
-                <div class="skill-wrap">
-                    <h4>NodeJS / Express / MongoDB:</h4>
-                    <div class="skill-bar">
-                        <div class="percentage" id="node"></div>
+                
+                <div class="skill-category">
+                    <h3>DevOps, Cloud & CI/CD</h3>
+                    <div class="badge-container">
+                        <a href="#"><img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/AKS-0078D7?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="AKS" /></a>
                     </div>
                 </div>
-            </div>
-            <div class=" skill">
-                <i class="fab fa-python fa-5x"></i>
-                <div class="skill-wrap">
-                    <h4>Python:</h4>
-                    <div class="skill-bar">
-                        <div class="percentage" id="python"></div>
+                
+                <div class="skill-category">
+                    <h3>Testing</h3>
+                    <div class="badge-container">
+                        <a href="#"><img src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white" alt="Jest" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white" alt="Vitest" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Testing_Library-E33332?style=for-the-badge&logo=testinglibrary&logoColor=white" alt="React Testing Library" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" /></a>
                     </div>
                 </div>
-            </div>
-            <div class="skill">
-                <img src="./img/sql.svg" alt="logo"/>
-                <div class="skill-wrap">
-                    <h4>MySQL / PL/SQL:</h4>
-                    <div class="skill-bar">
-                        <div class="percentage" id="sql"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill">
-                <i class="fab fa-java fa-5x"></i>
-                <div class="skill-wrap">
-                    <h4>Java / JSP / Servlet:</h4>
-                    <div class="skill-bar">
-                        <div class="percentage" id="java"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill">
-                <img src="./img/c++.svg" alt="logo"/>
-                <div class="skill-wrap">
-                    <h4>C++:</h4>
-                    <div class="skill-bar">
-                        <div class="percentage" id="cpp"></div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Utilities</h3>
+                    <div class="badge-container">
+                        <a href="#"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Github" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=black" alt="Webpack" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="Npm" /></a>
+                        <a href="#"><img src="https://img.shields.io/badge/NuGet-004880?style=for-the-badge&logo=nuget&logoColor=white" alt="Nuget" /></a>
                     </div>
                 </div>
             </div>
