@@ -1,2 +1,4 @@
 /scss/
 .DS_Store
+.qodo
+settings.json
